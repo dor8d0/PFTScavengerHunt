@@ -27,9 +27,9 @@ class _HomeScreenState extends State<HomeScreen> {
           children: [
             SizedBox(width: 300, height: 200, child: Image.asset("images\\LSU_Athletics_logo.svg.png", fit: BoxFit.scaleDown,)),
             SizedBox(width: 300, height: 200, child: Image.asset("images\\lsu-patrick-taylor-hall-exterior-architecture.jpg", fit: BoxFit.scaleDown,)),
-            SizedBox(width: 300, height: 200, child: 
+            SizedBox(width: 300, height: 150, child: 
               ListView(children: [ 
-                Text("Choose your question", selectionColor: Color.fromARGB(255, 255, 255, 255),),
+                Text("Choose your question", style: TextStyle(color: Color.fromARGB(255, 255, 255, 255)),),
                 ElevatedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => Q1Screen()));}, child: Text("Q1")),
                 ElevatedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => Q2Screen()));}, child: Text("Q2")),
                 ElevatedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => Q3Screen()));}, child: Text("Q3")),
@@ -84,9 +84,9 @@ class Q1Screen extends StatelessWidget{
       body: Center(
         child: Column(
           children: [
-            Text("Which floor is the Chevron Center located on?"),
-            Text("You answered: "),
-            Text(answers[0]),
+            Text("Which floor is the Chevron Center located on?", style: TextStyle(color: Color.fromARGB(255, 255, 255, 255)),),
+            Text("You answered: ", style: TextStyle(color: Color.fromARGB(255, 255, 255, 255)),),
+            Text(answers[0], style: TextStyle(color: Color.fromARGB(255, 255, 255, 255)),),
             ElevatedButton(onPressed: (){answers[0] = "A"; Navigator.pop(context);}, child: Text("A: 2nd Floor")),
             ElevatedButton(onPressed: (){answers[0] = "B"; Navigator.pop(context);}, child: Text("B: 1st Floor")),
             ElevatedButton(onPressed: (){answers[0] = "C"; Navigator.pop(context);}, child: Text("C: 3rd Floor")),
@@ -107,9 +107,9 @@ class Q2Screen extends StatelessWidget{
       body: Center(
         child: Column(
           children: [
-            Text("Which food place is in the PFT?"),
-            Text("You answered: "),
-            Text(answers[1]),
+            Text("Which food place is in the PFT?", style: TextStyle(color: Color.fromARGB(255, 255, 255, 255)),),
+            Text("You answered: ", style: TextStyle(color: Color.fromARGB(255, 255, 255, 255)),),
+            Text(answers[1], style: TextStyle(color: Color.fromARGB(255, 255, 255, 255)),),
             ElevatedButton(onPressed: (){answers[1] = "A"; Navigator.pop(context);}, child: Text("A: Panera Bread")),
             ElevatedButton(onPressed: (){answers[1] = "B"; Navigator.pop(context);}, child: Text("B: Chipotle")),
             ElevatedButton(onPressed: (){answers[1] = "C"; Navigator.pop(context);}, child: Text("C: Fatboy's Pizza")),
@@ -130,9 +130,9 @@ class Q3Screen extends StatelessWidget{
       body: Center(
         child: Column(
           children: [
-            Text("What color are the big stairs in the Capstone Gallery?"),
-            Text("You answered: "),
-            Text(answers[2]),
+            Text("What color are the big stairs in the Capstone Gallery?", style: TextStyle(color: Color.fromARGB(255, 255, 255, 255)),),
+            Text("You answered: ", style: TextStyle(color: Color.fromARGB(255, 255, 255, 255)),),
+            Text(answers[2], style: TextStyle(color: Color.fromARGB(255, 255, 255, 255)),),
             ElevatedButton(onPressed: (){answers[2] = "A"; Navigator.pop(context);}, child: Text("A: White")),
             ElevatedButton(onPressed: (){answers[2] = "B"; Navigator.pop(context);}, child: Text("B: Red")),
             ElevatedButton(onPressed: (){answers[2] = "C"; Navigator.pop(context);}, child: Text("C: Black")),
@@ -153,9 +153,9 @@ class Q4Screen extends StatelessWidget{
       body: Center(
         child: Column(
           children: [
-            Text("What is the room number of the Roy O Martin Auditorium?"),
-            Text("You answered: "),
-            Text(answers[3]),
+            Text("What is the room number of the Roy O Martin Auditorium?", style: TextStyle(color: Color.fromARGB(255, 255, 255, 255)),),
+            Text("You answered: ", style: TextStyle(color: Color.fromARGB(255, 255, 255, 255)),),
+            Text(answers[3], style: TextStyle(color: Color.fromARGB(255, 255, 255, 255)),),
             ElevatedButton(onPressed: (){answers[3] = "A"; Navigator.pop(context);}, child: Text("A: 1200")),
             ElevatedButton(onPressed: (){answers[3] = "B"; Navigator.pop(context);}, child: Text("B: 1100")),
             ElevatedButton(onPressed: (){answers[3] = "C"; Navigator.pop(context);}, child: Text("C: 2000")),
@@ -176,9 +176,9 @@ class Q5Screen extends StatelessWidget{
       body: Center(
         child: Column(
           children: [
-            Text("How many bathrooms are on the first floor?"),
-            Text("You answered: "),
-            Text(answers[4]),
+            Text("How many bathrooms are on the first floor?", style: TextStyle(color: Color.fromARGB(255, 255, 255, 255)),),
+            Text("You answered: ", style: TextStyle(color: Color.fromARGB(255, 255, 255, 255)),),
+            Text(answers[4], style: TextStyle(color: Color.fromARGB(255, 255, 255, 255)),),
             ElevatedButton(onPressed: (){answers[4] = "A"; Navigator.pop(context);}, child: Text("A: 4")),
             ElevatedButton(onPressed: (){answers[4] = "B"; Navigator.pop(context);}, child: Text("B: 5")),
             ElevatedButton(onPressed: (){answers[4] = "C"; Navigator.pop(context);}, child: Text("C: 6")),
@@ -199,7 +199,7 @@ class FailScreen extends StatelessWidget{
       body: Center(
         child: Column(
           children: [
-            Text("...Did you even enter the building?"),
+            Text("...Did you even enter the building?", style: TextStyle(color: Color.fromARGB(255, 255, 255, 255)),),
             ElevatedButton(onPressed: (){Navigator.pop(context);}, child: Text("Try Again"))
           ],
         ),
@@ -217,7 +217,7 @@ class PassScreen extends StatelessWidget{
       body: Center(
         child: Column(
           children: [
-            Text("You got at least one question wrong"),
+            Text("You got at least one question wrong", style: TextStyle(color: Color.fromARGB(255, 255, 255, 255)),),
             ElevatedButton(onPressed: (){Navigator.pop(context);}, child: Text("Try Again"))
           ],
         ),
@@ -235,7 +235,7 @@ class PerfectScreen extends StatelessWidget{
       body: Center(
         child: Column(
           children: [
-            Text("You got every question right!"),
+            Text("You got every question right!", style: TextStyle(color: Color.fromARGB(255, 255, 255, 255)),),
           ],
         ),
       ),
