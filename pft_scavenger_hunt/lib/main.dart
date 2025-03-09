@@ -84,10 +84,13 @@ class Q1Screen extends StatelessWidget{
       body: Center(
         child: Column(
           children: [
-            Text("Q1 Screen"),
+            Text("Which floor is the Chevron Center located on?"),
             Text("You answered: "),
             Text(answers[0]),
-            ElevatedButton(onPressed: (){answers[0] = "A"; Navigator.pop(context);}, child: Text("Answer 1"))
+            ElevatedButton(onPressed: (){answers[0] = "A"; Navigator.pop(context);}, child: Text("A: 2nd Floor")),
+            ElevatedButton(onPressed: (){answers[0] = "B"; Navigator.pop(context);}, child: Text("B: 1st Floor")),
+            ElevatedButton(onPressed: (){answers[0] = "C"; Navigator.pop(context);}, child: Text("C: 3rd Floor")),
+            ElevatedButton(onPressed: (){answers[0] = "D"; Navigator.pop(context);}, child: Text("D: Basement"))
           ],
         ),
       ),
@@ -104,10 +107,13 @@ class Q2Screen extends StatelessWidget{
       body: Center(
         child: Column(
           children: [
-            Text("Q2 Screen"),
+            Text("Which food place is in the PFT?"),
             Text("You answered: "),
             Text(answers[1]),
-            ElevatedButton(onPressed: (){answers[1] = "A"; Navigator.pop(context);}, child: Text("Answer 1"))
+            ElevatedButton(onPressed: (){answers[1] = "A"; Navigator.pop(context);}, child: Text("A: Panera Bread")),
+            ElevatedButton(onPressed: (){answers[1] = "B"; Navigator.pop(context);}, child: Text("B: Chipotle")),
+            ElevatedButton(onPressed: (){answers[1] = "C"; Navigator.pop(context);}, child: Text("C: Fatboy's Pizza")),
+            ElevatedButton(onPressed: (){answers[1] = "D"; Navigator.pop(context);}, child: Text("D: Smoothie King"))
           ],
         ),
       ),
@@ -124,10 +130,13 @@ class Q3Screen extends StatelessWidget{
       body: Center(
         child: Column(
           children: [
-            Text("Q1 Screen"),
+            Text("What color are the big stairs in the Capstone Gallery?"),
             Text("You answered: "),
             Text(answers[2]),
-            ElevatedButton(onPressed: (){answers[2] = "A"; Navigator.pop(context);}, child: Text("Answer 1"))
+            ElevatedButton(onPressed: (){answers[2] = "A"; Navigator.pop(context);}, child: Text("A: White")),
+            ElevatedButton(onPressed: (){answers[2] = "B"; Navigator.pop(context);}, child: Text("B: Red")),
+            ElevatedButton(onPressed: (){answers[2] = "C"; Navigator.pop(context);}, child: Text("C: Black")),
+            ElevatedButton(onPressed: (){answers[2] = "D"; Navigator.pop(context);}, child: Text("D: Brown"))
           ],
         ),
       ),
@@ -144,10 +153,13 @@ class Q4Screen extends StatelessWidget{
       body: Center(
         child: Column(
           children: [
-            Text("Q1 Screen"),
+            Text("What is the room number of the Roy O Martin Auditorium?"),
             Text("You answered: "),
             Text(answers[3]),
-            ElevatedButton(onPressed: (){answers[3] = "A"; Navigator.pop(context);}, child: Text("Answer 1"))
+            ElevatedButton(onPressed: (){answers[3] = "A"; Navigator.pop(context);}, child: Text("A: 1200")),
+            ElevatedButton(onPressed: (){answers[3] = "B"; Navigator.pop(context);}, child: Text("B: 1100")),
+            ElevatedButton(onPressed: (){answers[3] = "C"; Navigator.pop(context);}, child: Text("C: 2000")),
+            ElevatedButton(onPressed: (){answers[3] = "D"; Navigator.pop(context);}, child: Text("D: 1300"))
           ],
         ),
       ),
@@ -164,10 +176,13 @@ class Q5Screen extends StatelessWidget{
       body: Center(
         child: Column(
           children: [
-            Text("Q1 Screen"),
+            Text("How many bathrooms are on the first floor?"),
             Text("You answered: "),
             Text(answers[4]),
-            ElevatedButton(onPressed: (){answers[4] = "A"; Navigator.pop(context);}, child: Text("Answer 1"))
+            ElevatedButton(onPressed: (){answers[4] = "A"; Navigator.pop(context);}, child: Text("A: 4")),
+            ElevatedButton(onPressed: (){answers[4] = "B"; Navigator.pop(context);}, child: Text("B: 5")),
+            ElevatedButton(onPressed: (){answers[4] = "C"; Navigator.pop(context);}, child: Text("C: 6")),
+            ElevatedButton(onPressed: (){answers[4] = "D"; Navigator.pop(context);}, child: Text("D: 7"))
           ],
         ),
       ),
