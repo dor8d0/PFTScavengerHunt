@@ -199,7 +199,7 @@ class FailScreen extends StatelessWidget{
       body: Center(
         child: Column(
           children: [
-            Text("...Did you even enter the building?", style: TextStyle(color: Color.fromARGB(255, 255, 255, 255)),),
+            Text("...Did you even enter the building? 0 right answers :(", style: TextStyle(color: Color.fromARGB(255, 255, 255, 255)),),
             ElevatedButton(onPressed: (){Navigator.pop(context);}, child: Text("Try Again"))
           ],
         ),
